@@ -5,7 +5,7 @@ use ark_serialize::{CanonicalSerialize, Compress, SerializationError, Validate};
 use ark_std::{io::Cursor, marker::PhantomData, ops::Neg, vec, vec::Vec, One};
 use ark_ec::models::{
     bls12,
-    bls12::Bls12Parameters,
+    bls12::Bls12Config,
     short_weierstrass::{Affine, Projective, SWCurveConfig},
 };
 
