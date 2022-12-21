@@ -19,11 +19,6 @@ ark-std = { git = "https://github.com/arkworks-rs/std", default-features = false
 ark-serialize = { git = "https://github.com/arkworks-rs/algebra", branch = "release-0.4", default-features = false }
 ark-bls12-381 = { git = "https://github.com/arkworks-rs/curves/" }
 
-[patch.crates-io]
-ark-std = { git = "https://github.com/arkworks-rs/std" }
-
-
-
 [dev-dependencies]
 hex = "^0.4.0"
 

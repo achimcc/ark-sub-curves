@@ -22,6 +22,6 @@
 mod curves;
 mod fields;
 
+pub use curves::*;
 #[cfg(feature = "curve")]
 pub use fields::*;
-pub use curves::*;

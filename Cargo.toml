@@ -1,3 +1,10 @@
 [workspace]
 
-members = ["ark_sub_bls12_381"]
+members = ["ark_sub_bls12_381", "ark_sub_models"]
+
+[patch.crates-io]
+ark-ff = { git = "https://github.com/arkworks-rs/algebra", branch = "release-0.4" }
+ark-ec = { git = "https://github.com/arkworks-rs/algebra", branch = "release-0.4" }
+ark-serialize = { git = "https://github.com/arkworks-rs/algebra", branch = "release-0.4" }
+ark-poly = { git = "https://github.com/arkworks-rs/algebra", branch = "release-0.4" }
+ark-std = { git = "https://github.com/arkworks-rs/std" }

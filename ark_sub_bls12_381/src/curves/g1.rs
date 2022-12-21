@@ -1,13 +1,13 @@
 use crate::*;
-use ark_ec::{models::CurveConfig, AffineRepr, Group};
-use ark_ff::{Field, MontFp, PrimeField, Zero};
-use ark_serialize::{CanonicalSerialize, Compress, SerializationError, Validate};
-use ark_std::{io::Cursor, marker::PhantomData, ops::Neg, vec, vec::Vec, One};
 use ark_ec::models::{
     bls12,
     bls12::Bls12Config,
     short_weierstrass::{Affine, Projective, SWCurveConfig},
 };
+use ark_ec::{models::CurveConfig, AffineRepr, Group};
+use ark_ff::{Field, MontFp, PrimeField, Zero};
+use ark_serialize::{CanonicalSerialize, Compress, SerializationError, Validate};
+use ark_std::{io::Cursor, marker::PhantomData, ops::Neg, vec, vec::Vec, One};
 
 use crate::util::{
     read_g1_compressed, read_g1_uncompressed, serialize_fq, EncodingFlags, G1_SERIALIZED_SIZE,
