@@ -1,12 +1,12 @@
 use crate::{Fq, Fq12Config, Fq2Config, Fq6Config};
 use ark_ec::{
-    models::bls12::{Bls12, Bls12Config, G1Prepared, G2Prepared, TwistType},
+    // models::bls12::{Bls12, Bls12Config, G1Prepared, G2Prepared, TwistType},
     pairing::{MillerLoopOutput, Pairing, PairingOutput},
 };
 use ark_ff::Fp12;
 use ark_serialize::{CanonicalDeserialize, CanonicalSerialize, Compress};
 use ark_std::{io::Cursor, marker::PhantomData, vec, vec::Vec};
-// use ark_sub_models::bls12::{Bls12, Bls12Config, G1Prepared, G2Prepared, TwistType};
+use ark_sub_models::bls12::{Bls12, Bls12Config, G1Prepared, G2Prepared, TwistType};
 
 pub mod g1;
 pub mod g2;

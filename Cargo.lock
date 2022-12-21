@@ -14,17 +14,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "ark-bls12-381"
-version = "0.4.0-alpha.1"
-source = "git+https://github.com/arkworks-rs/curves/#febd7635fbee31e7e94eac1ba38f75cd22793bde"
-dependencies = [
- "ark-ec",
- "ark-ff",
- "ark-serialize",
- "ark-std 0.4.0-alpha",
-]
-
-[[package]]
 name = "ark-ec"
 version = "0.4.0-alpha.5"
 source = "git+https://github.com/arkworks-rs/algebra?branch=release-0.4#b1d61ef132d626d079417a5c77834861633f6a9a"
@@ -136,11 +125,11 @@ dependencies = [
 name = "ark-sub-bls12-381"
 version = "0.4.0"
 dependencies = [
- "ark-bls12-381",
  "ark-ec",
  "ark-ff",
  "ark-serialize",
  "ark-std 0.3.0",
+ "ark-sub-models",
  "hex",
 ]
 

@@ -17,7 +17,7 @@ ark-ff = { git = "https://github.com/arkworks-rs/algebra", branch = "release-0.4
 ark-ec = { git = "https://github.com/arkworks-rs/algebra", branch = "release-0.4", default-features = false }
 ark-std = { git = "https://github.com/arkworks-rs/std", default-features = false }
 ark-serialize = { git = "https://github.com/arkworks-rs/algebra", branch = "release-0.4", default-features = false }
-ark-bls12-381 = { git = "https://github.com/arkworks-rs/curves/" }
+ark-sub-models = { path = "../ark_sub_models" }
 
 [dev-dependencies]
 hex = "^0.4.0"
@@ -25,7 +25,7 @@ hex = "^0.4.0"
 
 [features]
 default = [ "curve", "std" ]
-std = [ "ark-std/std", "ark-ff/std", "ark-ec/std", "ark-serialize/std", "ark-bls12-381/std" ]
+std = [ "ark-std/std", "ark-ff/std", "ark-ec/std", "ark-serialize/std", "ark-sub-models/std" ]
 
 curve = [ "scalar_field" ]
 scalar_field = []

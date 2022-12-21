@@ -1,5 +1,5 @@
 use crate::*;
-use ark_ec::models::{
+use ark_sub_models::{
     bls12,
     bls12::Bls12Config,
     short_weierstrass::{Affine, Projective, SWCurveConfig},
